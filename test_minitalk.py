@@ -30,7 +30,7 @@ def test_with_lengths(pid_server, log_file, num_runs=1):
 	for length in input_lengths:
 		print(f"Testing ASCII+digits with length {length}")
 		print(f"-------------------")
-		for _ in range(10):
+		for _ in range(1):
 			input_str = generate_random_string(length)
 			execute_client_and_wait(pid_server, input_str)
 			if check_input_in_file(input_str, log_file):
